@@ -29,5 +29,99 @@
 
     font-family: 'Merriweather Sans';
     font-weight: 400;
+    font-size: 16px;
 }
+
+body {
+    background-color: var(--body-bg-color);
+    width: 100vw;
+}
+
+aside {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+main {
+    width: 70vw;
+}
+
+ul li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+
+/* Personalização do <aside>, div cards e demais elementos internos */
+
+div.cards {
+    background-color: var(--bg-cards);
+    border-radius: 2rem;
+    display: flex;
+    width: 80%;
+}
+
+/* Profile Card Settings */
+body aside div#profile-card{
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1.5rem 2.5rem;
+    color: var(--text-color);
+}
+
+body aside div img#profile-image{
+    width: 36%;
+    border-radius: 50%;
+    outline: 0.15rem #00FF00 solid;
+    margin-bottom: 2rem;
+}
+
+div#profile-card h1 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+div#profile-card p {
+    font-size: 0.9rem;
+}
+/* Profile Card Settings */
+
+/* Social Card Settings */
+div#social-card ul{
+    padding: 1.5rem;
+    color: var(--text-color);
+}
+
+div#social-card li{
+    margin: 1rem;
+    gap: 1rem;
+}
+
+div#social-card li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+div#social-card li a:hover{
+    color: var(--bg-techs);
+}
+/* Social Card Settings */
+
+
+
+
+
+@media (min-width: 1440px){
+    body {
+        width: 70vw;
+        position: absolute;
+        margin: 5vh 15vw 5vh;
+    }
+}
+
 
