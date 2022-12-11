@@ -35,9 +35,11 @@
 body {
     background-color: var(--body-bg-color);
     width: 100vw;
+    display: flex;
 }
 
 main {
+    flex-shrink: 0;
     width: 30vw;
     display: flex;
     flex-direction: column;
@@ -48,6 +50,9 @@ main {
 
 aside {
     width: 70vw;
+    padding-top: 2rem;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 ul li {
@@ -169,10 +174,130 @@ div#exp-education-cards > ul > li > ul > li{
     font-weight: 400;
     font-size: 0.8rem;
 }
-/* Exp card Settings */
+/* Exp and Education card Settings */
+
+/* Section class aside-content Settings */
+.aside-content{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+/* Section class aside-content Settings */
+
+/* Div my-projects-space Settings */
+div.header-projects-posts{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--bg-cards);
+    border-radius: 2rem;
+}
+
+div.header-projects-posts :nth-child(1){
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+div.header-projects-posts :nth-child(2){
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+/* Div my-projects-space Settings */
+
+/* Div project-card-description Settings */
+.project-card-description{
+    padding: 2rem;
+    display: flex;
+    background-color: var(--bg-cards);
+    border-radius: 2rem;
+    flex-flow: wrap;
+    width: 48%;
+}
+/* Div project-card-description Settings */
+
+/* Div project-cards-title Settings */
+.project-cards-title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-color);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    flex-basis: 100%;
+}
+/* Div project-cards-title Settings */
+
+.project-card-description p{
+    color: var(--text-color);
+    font-size: 0.9rem;
+    flex-basis: 100%;
+}
+
+.project-cards-stats{
+    color: var(--text-color);
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    align-items: center;
+    flex-basis: 100%;
+    margin-top: 1.5rem;
+}
+
+.project-cards-stats :nth-child(5){
+    margin-left: auto;
+}
+
+#my-recent-posts{
+    margin-top: 2rem;
+}
+
+.recent-posts{
+    background-color: var(--bg-cards);
+    color: var(--text-color);
+    flex-basis: 100%;
+    border-radius: 2rem;
+    display: flex;
+    padding: 2rem;
+    gap: 1.5rem;
+}
 
 
+.recent-posts img{
+    border-radius: 50%;
+    width: 20%;
+}
 
+.post-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-content :nth-child(1){
+    flex-basis: 100%;
+    font-weight: 700;
+}
+
+.post-content :nth-child(2){
+    flex-basis: 100%;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-content :nth-child(3){
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.post-content :nth-child(4), :nth-child(5), :nth-child(6){
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+}
 
 
 @media (min-width: 1440px){
