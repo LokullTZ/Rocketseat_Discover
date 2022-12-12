@@ -139,7 +139,7 @@ div#tech-cards p{
     padding-top: 0.25rem;
     font-size: 0.8rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 /* Tech cards Settings */
 
@@ -294,7 +294,7 @@ div.header-projects-posts :nth-child(2){
     font-size: 0.9rem;
 }
 
-.post-content :nth-child(4), :nth-child(5), :nth-child(6){
+ .post-content :nth-child(4), .post-content :nth-child(5), .post-content :nth-child(6){
     margin-right: 1.5rem;
     font-size: 0.8rem;
 }
