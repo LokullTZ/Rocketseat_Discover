@@ -77,7 +77,7 @@ body main div#profile-card{
     color: var(--text-color);
 }
 
-body main div img#profile-image{
+body main div img#profile_image{
     width: 36%;
     border-radius: 50%;
     outline: 0.15rem #00FF00 solid;
